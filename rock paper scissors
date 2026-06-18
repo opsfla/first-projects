@@ -1,0 +1,31 @@
+import random
+
+Rock = "rock"
+Paper = "paper"
+Scissors = "scissors"
+
+human = input("rock, paper or scissors?: r/p/s ")
+options = ["rock", "paper", "scissors"]
+computer = random.choice(options)
+print(computer)
+
+if human == computer:
+    print("Tie")
+elif human == "r":
+    if computer == "paper":
+        print("Computer covers rock, Computer wins!")
+    else: 
+        print("Computer crushed, You win")
+elif human == "p":
+    if computer == "scissors":
+        print("Computer cuts paper, Computer wins!")
+    else: 
+        print("You cover rock, You win")
+elif human == "s":
+    if computer == "rock":
+        print("Computer crushes scissors, Computer wins!")
+    else: 
+        print("You cut paper, You win")
+if human != 'r' or 'p' or 's':
+    print("incorrect input")
+#logical operators are OR AND, NOT
