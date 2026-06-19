@@ -1,4 +1,5 @@
 import random
+import time
 
 Rock = "rock"
 Paper = "paper"
@@ -8,7 +9,7 @@ human = input("rock, paper or scissors?: r/p/s ")
 options = ["rock", "paper", "scissors"]
 computer = random.choice(options)
 print(computer)
-
+time.sleep(1)
 if human == computer:
     print("Tie")
 elif human == "r":
@@ -26,6 +27,6 @@ elif human == "s":
         print("Computer crushes scissors, Computer wins!")
     else: 
         print("You cut paper, You win")
-if human != 'r' or 'p' or 's':
+else:
     print("incorrect input")
-#logical operators are OR AND, NOT
+
