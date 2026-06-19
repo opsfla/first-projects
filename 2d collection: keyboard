@@ -1,0 +1,10 @@
+
+firstr =    ("q","w","e","r","t","y","u","i","o","p")
+secondr =   ("a","s","d","f","g","h","j","k","l",)
+thirdr =    ("z","x","c","v","b","n","m",)
+keyboard =  (firstr, secondr, thirdr)
+
+for key in keyboard:
+    for letter in key:
+        print(letter, end=" ")
+    print()
