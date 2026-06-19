@@ -1,0 +1,38 @@
+menu = {
+    "burger" : 3,
+    "chips"  : 2,
+    "drink"  : 2,
+    "combo"  : 6, 
+}
+
+food = menu.keys()
+order = []
+price = menu.values()
+total = 0
+
+while True:
+    customer = input(f"what would you like to order?: {food} (type quit to exit)  ").lower()
+    if customer.lower == "yes":
+        print(food)
+    elif customer == "burger":
+        print(f"that will cost £{menu.get('burger')}")
+        order.append(customer)
+        total += menu.get("burger")
+    elif customer == "chips":
+        print(f"that will cost £{menu.get('chips')}")
+        order.append(customer)
+        total += menu.get("chips")
+    elif customer == "drink":
+        print(f"that will cost £{menu.get('drink')}")
+        order.append(customer)
+        total += menu.get("drink")
+    elif customer == "combo":
+        print(f"that will cost £{menu.get('combo')}")
+        order.append(customer)
+        total += menu.get("combo")
+    elif customer.lower() == "quit":
+        break
+    else:
+        print("that is not on the menu")
+print(f"you have ordered: {order} your total is {total}")
+  
