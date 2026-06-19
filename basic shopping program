@@ -1,15 +1,16 @@
-hop = [ ]
+shop = [ ]
 price = [ ]
 total = 0
 
 while True:
     item = input("what would you like to buy?: ")
     shop.append(item)
-    price = int(input("What is the price?: "))
-    total += price
+    cost = int(input("What is the price?: "))
+    price.append(cost)
+    total += cost
     end = input("are you finished? y/n ")
     if end.lower() == "y":
         break
     else:
-        print(f"you have added {shop} and the total is: £{total}")
-print(f"you have added {shop} and the total is: £{total}")
+        print(f"you have added {shop} which cost {price}, the total is: £{total}")
+print(f"you have added {shop} which cost {price}, the total is: £{total}")
