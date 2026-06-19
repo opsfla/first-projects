@@ -5,7 +5,7 @@ menu = {
     "combo"  : 6, 
 }
 
-food = menu.keys()
+food = list(menu.keys())
 order = []
 price = menu.values()
 total = 0
